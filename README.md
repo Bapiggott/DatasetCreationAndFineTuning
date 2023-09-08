@@ -1,11 +1,20 @@
 # DatasetCreationAndFineTuning
 
-1. Install `conda` and create an envirnment by running the following commands:
+1. Install `conda` by running the following commands:
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-VERSION-Linux-x86_64.sh
 chmod +x Miniconda3-VERSION-Linux-x86_64.sh
 ./Miniconda3-VERSION-Linux-x86_64.sh
 source ~/.bashrc
+```
+2. Create a `conda` envirnment by running the following commands:
+```
+conda create --name myfinetuningenv
+conda activate myfinetuningenv
+```
+To deactive the `conda` envirnment, running the following command:
+```
+conda deactivate
 ```
 ### Table 1: The effectiveness of generating response (Llama-2-13B, 1 epoch) - In Percentage.
 
