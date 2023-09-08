@@ -16,6 +16,10 @@ To deactive the `conda` envirnment, run the following command:
 ```
 conda deactivate
 ```
+3. Install the required dependencies by executing the following command:
+```
+pip --all dependecines needed
+```
 ### Table 1: The effectiveness of generating response (Llama-2-13B, 1 epoch) - In Percentage.
 
 | Model Name         | Src_IP | Dst_IP | Src_Port | Dst_Port | Flag   | Seq#   | Ack#   | Length | Overall Average |
