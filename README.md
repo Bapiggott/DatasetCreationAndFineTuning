@@ -12,7 +12,7 @@ source ~/.bashrc
 conda create --name myfinetuningenv
 conda activate myfinetuningenv
 ```
-To deactive the `conda` envirnment, running the following command:
+To deactive the `conda` envirnment, run the following command:
 ```
 conda deactivate
 ```
