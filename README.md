@@ -1,4 +1,12 @@
 # DatasetCreationAndFineTuning
+
+1. Install `conda` and create an envirnment by running the following commands:
+```
+wget https://repo.anaconda.com/miniconda/Miniconda3-VERSION-Linux-x86_64.sh
+chmod +x Miniconda3-VERSION-Linux-x86_64.sh
+./Miniconda3-VERSION-Linux-x86_64.sh
+source ~/.bashrc
+```
 ### Table 1: The effectiveness of generating response (Llama-2-13B, 1 epoch) - In Percentage.
 
 | Model Name         | Src_IP | Dst_IP | Src_Port | Dst_Port | Flag   | Seq#   | Ack#   | Length | Overall Average |
