@@ -38,11 +38,3 @@ df.loc[:, "text"] = text_col
 # Print or save the DataFrame as needed
 print(df.head())
 df.to_csv("data_100k.csv", index=False)
-#python3 mergeAdapters.py --base_model_name meta-llama/Llama-2-7b-hf --adapters_path ./adaptersLlama7B_20k/ --final_model_name llama-7b-tcp-20k
-# python3 mergeAdapters.py --base_model_name meta-llama/Llama-2-7b-hf --adapters_path ./adaptersLlama7B_40k/ --final_model_name llama-7b-tcp-40k
-# python3 mergeAdapters.py --base_model_name meta-llama/Llama-2-7b-hf --adapters_path ./adaptersLlama7B_60k/ --final_model_name llama-7b-tcp-60k
-# python3 mergeAdapters.py --base_model_name meta-llama/Llama-2-7b-hf --adapters_path ./adaptersLlama7B_100k/ --final_model_name llama-7b-tcp-80k
-# python3 mergeAdapters.py --base_model_name meta-llama/Llama-2-7b-hf --adapters_path ./adaptersLlama7B_100k_real/ --final_model_name llama-7b-tcp-100k
-# python3 testing_modal_8_14_qna_1.py; wait 90; python3 testing_modal_8_14_qna_2.py; wait 90; python3 testing_modal_8_14_qna_3.py; wait 90; python3 testing_modal_8_14_qna_4.py; wait 90; python3 testing_modal_8_14_qna_5.py
-# test_modal_100_2_e.py
-# python3 test_modal_100_2_a.py; wait 90; python3 test_modal_100_2_b.py; wait 90; python3 test_modal_100_2_c.py; wait 90; python3 test_modal_100_2_d.py; wait 90; python3 test_modal_100_2_e.py
