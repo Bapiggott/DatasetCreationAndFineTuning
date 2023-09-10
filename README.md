@@ -40,17 +40,13 @@ pip install -U git+https://github.com/huggingface/peft.git
 pip install -U git+https://github.com/huggingface/accelerate.git
 pip install -U einops
 pip install -U safetensors
-pip install torch
 pip install -U xformers
 pip install -U datasets
-pip install -U pip
 pip install accelerate
 pip install appdirs
 pip install bitsandbytes
 pip install datasets
 pip install fire
-pip install git+https://github.com/huggingface/peft.git
-pip install git+https://github.com/huggingface/transformers.git
 pip install torch
 pip install sentencepiece
 pip install tensorboardX
