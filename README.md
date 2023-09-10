@@ -55,6 +55,19 @@ pip install gradio
 
 ## Usage
 
+- **`create_dataset_pcap2json.py`**: This script is responsible for creating a dataset by converting PCAP files to JSON format. It extracts relevant information from network traffic data and stores it in a structured format.
+
+- **`convert_testing_json2csv.py`**: When working with testing data, this script converts JSON files to CSV format. It prepares the testing data for analysis or model evaluation.
+
+- **`finetune_script.py`**: This script is used for fine-tuning machine learning models. It takes a pre-trained model and fine-tunes it on a specific dataset to improve performance.
+
+- **`merge_adapters.py`**: In data integration scenarios, this script merges data from different sources or adapters. It combines data efficiently and handles potential conflicts or duplicates.
+
+- **`test_modal.py`**: This script is responsible for testing a trained machine learning model. It evaluates the model's performance on a given test dataset and generates relevant metrics.
+
+- **`fix_testing_json.py`**: Sometimes, testing data may require preprocessing or cleaning. This script fixes issues or inconsistencies in testing JSON data to ensure accurate analysis.
+
+- **`accuracy_of_tested_model.py`**: After testing a machine learning model, this script calculates and reports its accuracy or other performance metrics. It provides insights into how well the model performs. 
 
 ## Data
 
@@ -62,7 +75,7 @@ pip install gradio
 
 | Model Name         | Src_IP | Dst_IP | Src_Port | Dst_Port | Flag   | Seq#   | Ack#   | Length | Overall Average |
 |--------------------|--------|--------|----------|----------|--------|--------|--------|--------|-----------------|
-| Llama-2-13B (20k)  | 98.851 | 98.851 | 98.851   | 98.851   | 88.506 | 96.552 | 87.356 | 100 | 95.977          |
+| Llama-2-13B (20k)  | 98.851 | 98.851 | 98.851   | 98.851   | 88.506 | 96.552 | 87.356 | 100    | 95.977          |
 | Llama-2-13B (40k)  | 97.590 | 97.594 | 97.590   | 97.590   | 85.542 | 96.386 | 87.952 | 98.795 | 94.88           |
 | Llama-2-13B (60k)  | 98.824 | 98.824 | 98.824   | 98.824   | 84.706 | 97.647 | 95.294 | 98.824 | 96.471          |
 | Llama-2-13B (80k)  | 97.675 | 97.675 | 97.675   | 97.675   | 77.612 | 92.537 | 91.045 | 98.508 | 93.470          |
