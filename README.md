@@ -69,7 +69,7 @@ pip install gradio
 - **`accuracy_of_tested_model.py`**: After testing, this script calculates the accuracy of the model and reports it as a readable CSV file.. 
 
 ## Data
-In the experiments we conducted, we used 4 different LLMs: [Llama-2-7B](https://huggingface.co/meta-llama/Llama-2-7b), [Llama-2-13B](https://huggingface.co/meta-llama/Llama-2-13b), [GPT-2](https://huggingface.co/gpt2), and [Distil-GPT-2](https://huggingface.co/distilgpt2).  Below are the results of those experiments.
+In the experiments we conducted, we used 4 different LLMs: [Llama-2-7B](https://huggingface.co/meta-llama/Llama-2-7b), [Llama-2-13B](https://huggingface.co/meta-llama/Llama-2-13b), [GPT-2](https://huggingface.co/gpt2), and [Distil-GPT-2](https://huggingface.co/distilgpt2).  Below are the results of those experiments.  The experiments we did were testing the accuracy of the chatbox on different factors to juxtapose the differences: number epochs trained on, dataset size, and amount of parameters of the LLM. 
 ### Table 1: The effectiveness of generating response (Llama-2-13B, 1 epoch) - In Percentage.
 
 | Model Name         | Src_IP | Dst_IP | Src_Port | Dst_Port | Flag   | Seq#   | Ack#   | Length | Overall Average |
@@ -84,8 +84,7 @@ In the experiments we conducted, we used 4 different LLMs: [Llama-2-7B](https://
 | Standard Deviation | 0.867  | 0.867  | 0.867    | 0.867    | 4.316  | 2.116  | 3.37   | 0.578  | 1.173          |
 
 
-- Mean: 98.226
-- Standard Deviation: 0.867
+
 
 ### Table 2: The effectiveness of generating response (Llama-2-7B, 1 epoch) - In Percentage.
 
@@ -100,8 +99,7 @@ In the experiments we conducted, we used 4 different LLMs: [Llama-2-7B](https://
 | Mean               | 97.265 | 98.012 | 97.515   | 98.012   | 81.973 | 95.311 | 87.884 | 96.775 | 94.094          |
 | Standard Deviation | 3.11   | 2.088  | 2.646    | 2.088    | 4.989  | 2.394  | 5.144  | 2.272  | 2.537           |
 
-- Mean: 97.265
-- Standard Deviation: 3.11
+
 
 ### Table 3: The analysis of generative errors (Llama-2-13B, 1 epoch) - In Percentage.
 
@@ -116,8 +114,7 @@ In the experiments we conducted, we used 4 different LLMs: [Llama-2-7B](https://
 | Mean               | 76.179 | 20.307 | 1.872   | 0            | 0.23    | 0.95    | 0.462   | 12.594 | 1.158 | 6.555 |
 | Standard Deviation | 2.516  | 3.041  | 1.32    | 0            | 0.514   | 1.004   | 0.633   | 4.031  | 0.813 | 2.35  |
 
-- Mean: 76.179
-- Standard Deviation: 2.516
+
 
 ### Table 4: The effectiveness of generative errors (Llama-2-7B, 1 epoch) - In Percentage.
 
@@ -133,8 +130,7 @@ In the experiments we conducted, we used 4 different LLMs: [Llama-2-7B](https://
 | Standard Deviation | 5.5    | 4.827  | 1.436   | 1.042   | 0.552   | 0       | 2.055   | 0.559   | 0.676  | 7.754 | 1.977 | 3.604 |
 
 
-- Mean: 70.866
-- Standard Deviation: 5.5
+
 
 ### Table 5: The analysis of generative errors (GPT-2) - In Percentage.
 
@@ -150,8 +146,7 @@ In the experiments we conducted, we used 4 different LLMs: [Llama-2-7B](https://
 | Standard Deviation  | 14.047  | 4.972   | 2.187   | 1.874   | 2.051   | 2.693   | 8.382   | 1.94    | 1.834   | 0.813  | 6.969  | 2.981 |
 
 
-- Mean: 32.245
-- Standard Deviation: 14.047
+
 
 ### Table 6: The effectiveness of generating response (GPT-2) - In percentage.
 
@@ -168,8 +163,7 @@ In the experiments we conducted, we used 4 different LLMs: [Llama-2-7B](https://
 | Capability of Llama-2-13B | 54.088 | 72.373 | 76.118   | 76.118   | 93.963 | 62.562| 65.471| 94.436 | 74.158         |
 | Capability of Llama-2-7B  | 54.695 | 72.628 | 76.775   | 76.386   | 96.426 | 63.339| 67.876| 96.668 | 75.289         |
 
-- Mean: 53.2
-- Standard Deviation: 15.659
+
 
 ### Table 7: The analysis of generative errors (Distil-GPT-2) - In Percentage.
 
@@ -180,13 +174,12 @@ In the experiments we conducted, we used 4 different LLMs: [Llama-2-7B](https://
 | Distil-GPT-2 (100k, 1 Epoch)  | 26.437 | 5.747  | 21.839  | 8.046  | 8.046  | 16.092 | 10.345 | 3.448  | 0      | 0      | 0      | 0      |
 | Distil-GPT-2 (100k, 5 Epoch)  | 36.145 | 13.253 | 21.687  | 7.229  | 4.819  | 2.41   | 4.819  | 8.434  | 0.012  | 0      | 0      | 1.205  |
 | Distil-GPT-2 (100k, 10 Epoch) | 32.184 | 18.391 | 18.391  | 8.046  | 13.793 | 3.448  | 4.598  | 1.149  | 0      | 0      | 14.943 | 0      |
-|  |  |  |   |   |  |   |   |   |       |       | | 0     |
+|  |  |  |   |   |  |   |   |   |       |       | |      |
 | Mean                      | 31.137 | 13.915 | 19.97   | 9.032  | 10.389 | 5.999  | 6.021  | 3.296  | 0.002  | 0     | 7.586| 0.241|
 | Standard Deviation        | 3.712  | 5.178  | 1.704   | 2.685  | 3.902  | 5.695  | 2.463  | 3.026  | 0.005  | 0     | 7.476| 0.539|
 
 
-- Mean: 31.137
-- Standard Deviation: 3.712
+
 
 ### Table 8: The effectiveness of generating response (Distil-GPT-2) - In Percentage.
 
@@ -203,8 +196,7 @@ In the experiments we conducted, we used 4 different LLMs: [Llama-2-7B](https://
 | Capability of Llama-2-13B | 74.341  | 65.629  | 72.062    | 77.672    | 95.956 | 51.183 | 83.137 | 96.472 | 76.727      |
 | Capability of Llama-2-7B  | 75.176  | 65.86   | 72.685    | 77.946    | 98.472 | 51.819 | 86.192 | 98.751 | 77.897      |
 
-- Mean: 73.12
-- Standard Deviation: 16.077
+
 
 
 ## Authors
