@@ -18,7 +18,31 @@ conda deactivate
 ```
 3. Install the required dependencies by executing the following command:
 ```
-pip --all dependecines needed
+pip install jsonlib-py
+pip install csv
+pip install pandas
+pip install transformers
+pip install -U bitsandbytes
+pip install -U git+https://github.com/huggingface/transformers.git
+pip install -U git+https://github.com/huggingface/peft.git
+pip install -U git+https://github.com/huggingface/accelerate.git
+pip install -U einops
+pip install -U safetensors
+pip install torch
+pip install -U xformers
+pip install -U datasets
+pip install -U pip
+pip install accelerate
+pip install appdirs
+pip install bitsandbytes
+pip install datasets
+pip install fire
+pip install git+https://github.com/huggingface/peft.git
+pip install git+https://github.com/huggingface/transformers.git
+pip install torch
+pip install sentencepiece
+pip install tensorboardX
+pip install gradio
 ```
 ### Table 1: The effectiveness of generating response (Llama-2-13B, 1 epoch) - In Percentage.
 
