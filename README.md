@@ -122,6 +122,7 @@ In the experiments we conducted, we used 4 different LLMs: [Llama-2-7B](https://
 ### Table 4: The effectiveness of generative errors (Llama-2-7B, 1 epoch) - In Percentage.
 
 | Model Name        | 0 err. | 1 err. | 2 errs. | 3 errs. | 4 errs. | 5 errs. | 6 errs. | 7 errs. | 8 errs. | Flags  | Seq#  | Ack#  |
+|--------------------|--------|--------|---------|--------------|---------|---------|---------|--------|-------|-------|-------|-------|
 | Llama-2-7B (20k)  | 68.750 | 17.5   | 5       | 2.5     | 0       | 0       | 5       | 1.25    | 0      | 6.25  | 1.25  | 8.75  |
 | Llama-2-7B (40k)  | 73.494 | 24.096 | 1.205   | 1.205   | 0       | 0       | 0       | 0       | 0      | 12.048| 4.819 | 7.228 |
 | Llama-2-7B (60k)  | 78.75  | 18.75  | 2.5     | 0       | 0       | 0       | 0       | 0       | 0      | 11.25 | 1.25  | 6.25  |
