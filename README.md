@@ -55,19 +55,19 @@ pip install gradio
 
 ## Usage
 
-- **`create_dataset_pcap2json.py`**: This script is responsible for creating a dataset by converting PCAP files to JSON format. It extracts relevant information from network traffic data and stores it in a structured format.
+- **`create_dataset_pcap2json.py`**: This script is responsible for creating a dataset by converting PCAP files to a JSON file. It extracts relevant information from network traffic data and stores it in a structured format.  Also is used to create the testing dataset.
 
-- **`convert_testing_json2csv.py`**: When working with testing data, this script converts JSON files to CSV format. It prepares the testing data for analysis or model evaluation.
+- **`convert_testing_json2csv.py`**: Converts the dataset from a JSON format to a CSV format. Is useful for fine-tuning a LLM. 
 
-- **`finetune_script.py`**: This script is used for fine-tuning machine learning models. It takes a pre-trained model and fine-tunes it on a specific dataset to improve performance.
+- **`finetune_script.py`**: This script is used for fine-tuning LLMs. It takes a pre-trained model found from [hugging face](https://huggingface.co/) and fine-tunes it on the created dataset.  Make sure to change the model name as well as the path to the dataset.
 
-- **`merge_adapters.py`**: In data integration scenarios, this script merges data from different sources or adapters. It combines data efficiently and handles potential conflicts or duplicates.
+- **`merge_adapters.py`**: This merges the adapters to allow for the fine-tuned model to be ran after the completion of training.
 
-- **`test_modal.py`**: This script is responsible for testing a trained machine learning model. It evaluates the model's performance on a given test dataset and generates relevant metrics.
+- **`test_modal.py`**: This script is responsible for testing the newly trained LLM. It runs through a JSON dataset, which can be created by `create_dataset_pcap2json.py`. Should change the model name and path to testing dataset.
 
-- **`fix_testing_json.py`**: Sometimes, testing data may require preprocessing or cleaning. This script fixes issues or inconsistencies in testing JSON data to ensure accurate analysis.
+- **`fix_testing_json.py`**: The JSON output from `test_modal.py` needs to be fixed to better its format, this code does just that.
 
-- **`accuracy_of_tested_model.py`**: After testing a machine learning model, this script calculates and reports its accuracy or other performance metrics. It provides insights into how well the model performs. 
+- **`accuracy_of_tested_model.py`**: After testing, this script calculates the accuracy of the model and reports it as a readable CSV file.. 
 
 ## Data
 
