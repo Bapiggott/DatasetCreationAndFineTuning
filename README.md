@@ -170,5 +170,5 @@ pip install gradio
 ## Authors
 - [Brett Piggott](https://github.com/Bapiggott) - Co-author
 - [Siddhant Patil](https://github.com/srpatil24) - Co-author
-- [Guohuan Feng] - Co-author
-- [Anyi Liu] - Co-author
+- Guohuan Feng - Co-author
+- Anyi Liu - Co-author
