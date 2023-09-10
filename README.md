@@ -8,7 +8,7 @@
 
 ## Overview
 
-This project provides a Python-based solution for [describe what your project does].
+This project provides a Python-based solution for the creation of a fine-tuned LLM to be used as a chatbot to understand network protocals.
 
 ## Installation
 
@@ -54,7 +54,6 @@ pip install gradio
 ```
 
 ## Usage
-
 - **`create_dataset_pcap2json.py`**: This script is responsible for creating a dataset by converting PCAP files to a JSON file. It extracts relevant information from network traffic data and stores it in a structured format.  Also is used to create the testing dataset.
 
 - **`convert_testing_json2csv.py`**: Converts the dataset from a JSON format to a CSV format. Is useful for fine-tuning a LLM. 
@@ -70,7 +69,7 @@ pip install gradio
 - **`accuracy_of_tested_model.py`**: After testing, this script calculates the accuracy of the model and reports it as a readable CSV file.. 
 
 ## Data
-
+In the experiments we conducted, we used 4 different LLMs: [Llama-2-7B](https://huggingface.co/meta-llama/Llama-2-7b), [Llama-2-13B](https://huggingface.co/meta-llama/Llama-2-13b), [GPT-2](https://huggingface.co/gpt2), and [Distil-GPT-2](https://huggingface.co/distilgpt2).  Below are the results of those experiments.
 ### Table 1: The effectiveness of generating response (Llama-2-13B, 1 epoch) - In Percentage.
 
 | Model Name         | Src_IP | Dst_IP | Src_Port | Dst_Port | Flag   | Seq#   | Ack#   | Length | Overall Average |
@@ -180,4 +179,7 @@ pip install gradio
 - [Brett Piggott](https://github.com/Bapiggott) - Co-author
 - [Siddhant Patil](https://github.com/srpatil24) - Co-author
 - Guohuan Feng - Co-author
+- Ibrahim Odat - Co-author
+- [Rajdeep Mukherjee](https://github.com/r-a-j-d-e-e-p-m-u-k-h-e-r-j-e-e) - Co-author
+- Balakrishnan Dharmalingam - Co-author
 - Anyi Liu - Co-author
