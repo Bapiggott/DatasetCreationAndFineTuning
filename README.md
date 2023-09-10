@@ -1,4 +1,16 @@
 # DatasetCreationAndFineTuning
+## Table of Contents
+- [Overview](#overview)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Data](#data)
+- [Authors](#authors)
+
+## Overview
+
+This project provides a Python-based solution for [describe what your project does].
+
+## Installation
 
 1. Install `conda` by running the following commands:
 ```
@@ -44,6 +56,12 @@ pip install sentencepiece
 pip install tensorboardX
 pip install gradio
 ```
+
+## Usage
+
+
+## Data
+
 ### Table 1: The effectiveness of generating response (Llama-2-13B, 1 epoch) - In Percentage.
 
 | Model Name         | Src_IP | Dst_IP | Src_Port | Dst_Port | Flag   | Seq#   | Ack#   | Length | Overall Average |
@@ -148,3 +166,9 @@ pip install gradio
 - Mean: 73.12
 - Standard Deviation: 16.077
 
+
+## Authors
+- [Brett Piggott](https://github.com/Bapiggott) - Co-author
+- [Siddhant Patil](https://github.com/srpatil24) - Co-author
+- [Guohuan Feng] - Co-author
+- [Anyi Liu] - Co-author
